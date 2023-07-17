@@ -1,0 +1,350 @@
+<?xml version="1.0"?>
+<ncx version="2005-1" xmlns="http://www.daisy.org/z3986/2005/ncx/">
+  <head>
+    <meta name="dtb:uid" content="unknown"/>
+    <meta name="dtb:depth" content="3"/>
+    <meta name="dtb:totalPageCount" content="0"/>
+    <meta name="dtb:maxPageNumber" content="0"/>
+  </head>
+  <docTitle>
+    <text>RDV-APP</text>
+  </docTitle>
+  <navMap>    
+    <navPoint id="navPoint1" playOrder="1">
+      <navLabel>
+        <text>Bienvenidos a la documentiacón de RDV-APP para Registro de Ventas de textiles!</text>
+      </navLabel>
+      <content src="index.xhtml" />  
+    </navPoint>
+    <navPoint id="navPoint2" playOrder="2">
+      <navLabel>
+        <text>VISTA</text>
+      </navLabel>
+      <content src="vista.xhtml" />  
+      <navPoint id="navPoint3" playOrder="2">
+        <navLabel>
+          <text>VISTA</text>
+        </navLabel>
+        <content src="vista.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint4" playOrder="3">
+        <navLabel>
+          <text>vistaDeApp</text>
+        </navLabel>
+        <content src="vista.xhtml#vista.vistaDeApp" />  
+        <navPoint id="navPoint5" playOrder="3">
+          <navLabel>
+            <text>vistaDeApp</text>
+          </navLabel>
+          <content src="vista.xhtml#vista.vistaDeApp" />  
+        </navPoint>
+        <navPoint id="navPoint6" playOrder="4">
+          <navLabel>
+            <text>vistaDeApp.actualizar()</text>
+          </navLabel>
+          <content src="vista.xhtml#vista.vistaDeApp.actualizar" />  
+        </navPoint>
+        <navPoint id="navPoint7" playOrder="5">
+          <navLabel>
+            <text>vistaDeApp.borrar()</text>
+          </navLabel>
+          <content src="vista.xhtml#vista.vistaDeApp.borrar" />  
+        </navPoint>
+        <navPoint id="navPoint8" playOrder="6">
+          <navLabel>
+            <text>vistaDeApp.dar_alta()</text>
+          </navLabel>
+          <content src="vista.xhtml#vista.vistaDeApp.dar_alta" />  
+        </navPoint>
+        <navPoint id="navPoint9" playOrder="7">
+          <navLabel>
+            <text>vistaDeApp.modificar()</text>
+          </navLabel>
+          <content src="vista.xhtml#vista.vistaDeApp.modificar" />  
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint10" playOrder="8">
+      <navLabel>
+        <text>MODELO</text>
+      </navLabel>
+      <content src="modelo.xhtml" />  
+      <navPoint id="navPoint11" playOrder="8">
+        <navLabel>
+          <text>MODELO</text>
+        </navLabel>
+        <content src="modelo.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint12" playOrder="9">
+        <navLabel>
+          <text>BaseModel</text>
+        </navLabel>
+        <content src="modelo.xhtml#modelo.BaseModel" />  
+        <navPoint id="navPoint13" playOrder="9">
+          <navLabel>
+            <text>BaseModel</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.BaseModel" />  
+        </navPoint>
+        <navPoint id="navPoint14" playOrder="10">
+          <navLabel>
+            <text>BaseModel.DoesNotExist</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.BaseModel.DoesNotExist" />  
+        </navPoint>
+        <navPoint id="navPoint15" playOrder="11">
+          <navLabel>
+            <text>BaseModel.id</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.BaseModel.id" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint16" playOrder="12">
+        <navLabel>
+          <text>Registro</text>
+        </navLabel>
+        <content src="modelo.xhtml#modelo.Registro" />  
+        <navPoint id="navPoint17" playOrder="12">
+          <navLabel>
+            <text>Registro</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.Registro" />  
+        </navPoint>
+        <navPoint id="navPoint18" playOrder="13">
+          <navLabel>
+            <text>Registro.DoesNotExist</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.Registro.DoesNotExist" />  
+        </navPoint>
+        <navPoint id="navPoint19" playOrder="14">
+          <navLabel>
+            <text>Registro.cantidad</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.Registro.cantidad" />  
+        </navPoint>
+        <navPoint id="navPoint20" playOrder="15">
+          <navLabel>
+            <text>Registro.id</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.Registro.id" />  
+        </navPoint>
+        <navPoint id="navPoint21" playOrder="16">
+          <navLabel>
+            <text>Registro.precio</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.Registro.precio" />  
+        </navPoint>
+        <navPoint id="navPoint22" playOrder="17">
+          <navLabel>
+            <text>Registro.producto</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.Registro.producto" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint23" playOrder="18">
+        <navLabel>
+          <text>crud</text>
+        </navLabel>
+        <content src="modelo.xhtml#modelo.crud" />  
+        <navPoint id="navPoint24" playOrder="18">
+          <navLabel>
+            <text>crud</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.crud" />  
+        </navPoint>
+        <navPoint id="navPoint25" playOrder="19">
+          <navLabel>
+            <text>crud.actualizar_tree()</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.crud.actualizar_tree" />  
+        </navPoint>
+        <navPoint id="navPoint26" playOrder="20">
+          <navLabel>
+            <text>crud.borrar()</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.crud.borrar" />  
+        </navPoint>
+        <navPoint id="navPoint27" playOrder="21">
+          <navLabel>
+            <text>crud.consultar()</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.crud.consultar" />  
+        </navPoint>
+        <navPoint id="navPoint28" playOrder="22">
+          <navLabel>
+            <text>crud.dar_alta()</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.crud.dar_alta" />  
+        </navPoint>
+        <navPoint id="navPoint29" playOrder="23">
+          <navLabel>
+            <text>crud.modificar()</text>
+          </navLabel>
+          <content src="modelo.xhtml#modelo.crud.modificar" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint30" playOrder="24">
+        <navLabel>
+          <text>decorador_alta()</text>
+        </navLabel>
+        <content src="modelo.xhtml#modelo.decorador_alta" />  
+      </navPoint>
+      <navPoint id="navPoint31" playOrder="25">
+        <navLabel>
+          <text>decorador_borrar()</text>
+        </navLabel>
+        <content src="modelo.xhtml#modelo.decorador_borrar" />  
+      </navPoint>
+      <navPoint id="navPoint32" playOrder="26">
+        <navLabel>
+          <text>decorador_modificar()</text>
+        </navLabel>
+        <content src="modelo.xhtml#modelo.decorador_modificar" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint33" playOrder="27">
+      <navLabel>
+        <text>CONTROLADOR</text>
+      </navLabel>
+      <content src="controlador.xhtml" />  
+      <navPoint id="navPoint34" playOrder="27">
+        <navLabel>
+          <text>CONTROLADOR</text>
+        </navLabel>
+        <content src="controlador.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint35" playOrder="28">
+        <navLabel>
+          <text>Controlador</text>
+        </navLabel>
+        <content src="controlador.xhtml#controlador.Controlador" />  
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint36" playOrder="29">
+      <navLabel>
+        <text>OBSERVADOR</text>
+      </navLabel>
+      <content src="observador.xhtml" />  
+      <navPoint id="navPoint37" playOrder="29">
+        <navLabel>
+          <text>OBSERVADOR</text>
+        </navLabel>
+        <content src="observador.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint38" playOrder="30">
+        <navLabel>
+          <text>ConcreteObserverA</text>
+        </navLabel>
+        <content src="observador.xhtml#observador.ConcreteObserverA" />  
+        <navPoint id="navPoint39" playOrder="30">
+          <navLabel>
+            <text>ConcreteObserverA</text>
+          </navLabel>
+          <content src="observador.xhtml#observador.ConcreteObserverA" />  
+        </navPoint>
+        <navPoint id="navPoint40" playOrder="31">
+          <navLabel>
+            <text>ConcreteObserverA.update()</text>
+          </navLabel>
+          <content src="observador.xhtml#observador.ConcreteObserverA.update" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint41" playOrder="32">
+        <navLabel>
+          <text>Observador</text>
+        </navLabel>
+        <content src="observador.xhtml#observador.Observador" />  
+        <navPoint id="navPoint42" playOrder="32">
+          <navLabel>
+            <text>Observador</text>
+          </navLabel>
+          <content src="observador.xhtml#observador.Observador" />  
+        </navPoint>
+        <navPoint id="navPoint43" playOrder="33">
+          <navLabel>
+            <text>Observador.update()</text>
+          </navLabel>
+          <content src="observador.xhtml#observador.Observador.update" />  
+        </navPoint>
+      </navPoint>
+      <navPoint id="navPoint44" playOrder="34">
+        <navLabel>
+          <text>Sujeto</text>
+        </navLabel>
+        <content src="observador.xhtml#observador.Sujeto" />  
+        <navPoint id="navPoint45" playOrder="34">
+          <navLabel>
+            <text>Sujeto</text>
+          </navLabel>
+          <content src="observador.xhtml#observador.Sujeto" />  
+        </navPoint>
+        <navPoint id="navPoint46" playOrder="35">
+          <navLabel>
+            <text>Sujeto.agregar()</text>
+          </navLabel>
+          <content src="observador.xhtml#observador.Sujeto.agregar" />  
+        </navPoint>
+        <navPoint id="navPoint47" playOrder="36">
+          <navLabel>
+            <text>Sujeto.notificar()</text>
+          </navLabel>
+          <content src="observador.xhtml#observador.Sujeto.notificar" />  
+        </navPoint>
+        <navPoint id="navPoint48" playOrder="37">
+          <navLabel>
+            <text>Sujeto.observadores</text>
+          </navLabel>
+          <content src="observador.xhtml#observador.Sujeto.observadores" />  
+        </navPoint>
+        <navPoint id="navPoint49" playOrder="38">
+          <navLabel>
+            <text>Sujeto.quitar()</text>
+          </navLabel>
+          <content src="observador.xhtml#observador.Sujeto.quitar" />  
+        </navPoint>
+      </navPoint>
+    </navPoint>
+    <navPoint id="navPoint50" playOrder="39">
+      <navLabel>
+        <text>VALIDACIÓN</text>
+      </navLabel>
+      <content src="validacion_re.xhtml" />  
+      <navPoint id="navPoint51" playOrder="39">
+        <navLabel>
+          <text>VALIDACIÓN</text>
+        </navLabel>
+        <content src="validacion_re.xhtml" />  
+      </navPoint>
+      <navPoint id="navPoint52" playOrder="40">
+        <navLabel>
+          <text>Validacion</text>
+        </navLabel>
+        <content src="validacion_re.xhtml#validacion_re.Validacion" />  
+        <navPoint id="navPoint53" playOrder="40">
+          <navLabel>
+            <text>Validacion</text>
+          </navLabel>
+          <content src="validacion_re.xhtml#validacion_re.Validacion" />  
+        </navPoint>
+        <navPoint id="navPoint54" playOrder="41">
+          <navLabel>
+            <text>Validacion.regex_cantidad()</text>
+          </navLabel>
+          <content src="validacion_re.xhtml#validacion_re.Validacion.regex_cantidad" />  
+        </navPoint>
+        <navPoint id="navPoint55" playOrder="42">
+          <navLabel>
+            <text>Validacion.regex_precio()</text>
+          </navLabel>
+          <content src="validacion_re.xhtml#validacion_re.Validacion.regex_precio" />  
+        </navPoint>
+        <navPoint id="navPoint56" playOrder="43">
+          <navLabel>
+            <text>Validacion.regex_producto()</text>
+          </navLabel>
+          <content src="validacion_re.xhtml#validacion_re.Validacion.regex_producto" />  
+        </navPoint>
+      </navPoint>
+    </navPoint>
+  </navMap>
+</ncx>

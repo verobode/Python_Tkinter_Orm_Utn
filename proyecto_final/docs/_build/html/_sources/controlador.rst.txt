@@ -1,0 +1,7 @@
+CONTROLADOR
+==================
+
+.. automodule:: controlador
+   :members:
+   :undoc-members:
+   :show-inheritance:

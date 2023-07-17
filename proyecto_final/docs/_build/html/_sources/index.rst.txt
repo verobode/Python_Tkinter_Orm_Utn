@@ -1,0 +1,35 @@
+.. RDV-APP documentation master file, created by
+   sphinx-quickstart on Thu Feb 23 15:14:40 2023.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
+
+Bienvenidos a la documentiacón de RDV-APP para Registro de Ventas de textiles!
+===================================
+
+Registra las ventas realizadas de productos textiles en general (como bolsas ecológicas, almohadas y materas, etc.)  y productos de diseño con sublimado.
+
+•	Las ventas se registran introduciendo el nombre del producto y medidas (en caso de bolsas), el sublimado que contiene (en caso de contenerlo).
+
+•	La cantidad que se cerró para la venta (1 a más)
+
+•	El precio individual o total por cantidad
+
+
+.. toctree::
+   :maxdepth: 4
+   :caption: Contents:
+
+   vista
+   modelo
+   controlador
+   observador
+   validacion_re
+
+
+
+Indices and tables
+==================
+
+* :ref:`genindex`
+* :ref:`modindex`
+* :ref:`search`

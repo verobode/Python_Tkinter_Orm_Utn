@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MODELO &mdash; documentación de RDV-APP - 0.1</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="VISTA" href="vista.html" />
+    <link rel="prev" title="Welcome to RDV-APP’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            RDV-APP
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">MODELO</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#modelo.BaseModel"><code class="docutils literal notranslate"><span class="pre">BaseModel</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modelo.BaseModel.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">BaseModel.DoesNotExist</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modelo.BaseModel.id"><code class="docutils literal notranslate"><span class="pre">BaseModel.id</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo.Registro"><code class="docutils literal notranslate"><span class="pre">Registro</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modelo.Registro.DoesNotExist"><code class="docutils literal notranslate"><span class="pre">Registro.DoesNotExist</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modelo.Registro.cantidad"><code class="docutils literal notranslate"><span class="pre">Registro.cantidad</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modelo.Registro.id"><code class="docutils literal notranslate"><span class="pre">Registro.id</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modelo.Registro.precio"><code class="docutils literal notranslate"><span class="pre">Registro.precio</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modelo.Registro.producto"><code class="docutils literal notranslate"><span class="pre">Registro.producto</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo.crud"><code class="docutils literal notranslate"><span class="pre">crud</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#modelo.crud.actualizar_tree"><code class="docutils literal notranslate"><span class="pre">crud.actualizar_tree()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modelo.crud.borrar"><code class="docutils literal notranslate"><span class="pre">crud.borrar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modelo.crud.consultar"><code class="docutils literal notranslate"><span class="pre">crud.consultar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modelo.crud.dar_alta"><code class="docutils literal notranslate"><span class="pre">crud.dar_alta()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modelo.crud.modificar"><code class="docutils literal notranslate"><span class="pre">crud.modificar()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo.decorador_alta"><code class="docutils literal notranslate"><span class="pre">decorador_alta()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo.decorador_borrar"><code class="docutils literal notranslate"><span class="pre">decorador_borrar()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#modelo.decorador_modificar"><code class="docutils literal notranslate"><span class="pre">decorador_modificar()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="vista.html">VISTA</a></li>
+<li class="toctree-l1"><a class="reference internal" href="controlador.html">CONTROLADOR</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RDV-APP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">MODELO</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/modelo.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-modelo">
+<span id="modelo"></span><h1>MODELO<a class="headerlink" href="#module-modelo" title="Enlace permanente a este encabezado"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="modelo.BaseModel">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modelo.</span></span><span class="sig-name descname"><span class="pre">BaseModel</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modelo.html#BaseModel"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modelo.BaseModel" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">Model</span></code></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="modelo.BaseModel.DoesNotExist">
+<span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#modelo.BaseModel.DoesNotExist" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>alias de <code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModelDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="modelo.BaseModel.id">
+<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;AutoField:</span> <span class="pre">BaseModel.id&gt;</span></em><a class="headerlink" href="#modelo.BaseModel.id" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelo.Registro">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modelo.</span></span><span class="sig-name descname"><span class="pre">Registro</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">*</span></span><span class="n"><span class="pre">args</span></span></em>, <em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">kwargs</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modelo.html#Registro"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modelo.Registro" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="#modelo.BaseModel" title="modelo.BaseModel"><code class="xref py py-class docutils literal notranslate"><span class="pre">BaseModel</span></code></a></p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="modelo.Registro.DoesNotExist">
+<span class="sig-name descname"><span class="pre">DoesNotExist</span></span><a class="headerlink" href="#modelo.Registro.DoesNotExist" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>alias de <code class="xref py py-class docutils literal notranslate"><span class="pre">RegistroDoesNotExist</span></code></p>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="modelo.Registro.cantidad">
+<span class="sig-name descname"><span class="pre">cantidad</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;CharField:</span> <span class="pre">Registro.cantidad&gt;</span></em><a class="headerlink" href="#modelo.Registro.cantidad" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="modelo.Registro.id">
+<span class="sig-name descname"><span class="pre">id</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;AutoField:</span> <span class="pre">Registro.id&gt;</span></em><a class="headerlink" href="#modelo.Registro.id" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="modelo.Registro.precio">
+<span class="sig-name descname"><span class="pre">precio</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;CharField:</span> <span class="pre">Registro.precio&gt;</span></em><a class="headerlink" href="#modelo.Registro.precio" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="modelo.Registro.producto">
+<span class="sig-name descname"><span class="pre">producto</span></span><em class="property"><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="pre">&lt;CharField:</span> <span class="pre">Registro.producto&gt;</span></em><a class="headerlink" href="#modelo.Registro.producto" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py class">
+<dt class="sig sig-object py" id="modelo.crud">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">modelo.</span></span><span class="sig-name descname"><span class="pre">crud</span></span><a class="reference internal" href="_modules/modelo.html#crud"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modelo.crud" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <a class="reference internal" href="observador.html#observador.Sujeto" title="observador.Sujeto"><code class="xref py py-class docutils literal notranslate"><span class="pre">Sujeto</span></code></a></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.crud.actualizar_tree">
+<span class="sig-name descname"><span class="pre">actualizar_tree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modelo.html#crud.actualizar_tree"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modelo.crud.actualizar_tree" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.crud.borrar">
+<span class="sig-name descname"><span class="pre">borrar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/modelo.html#crud.borrar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modelo.crud.borrar" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.crud.consultar">
+<span class="sig-name descname"><span class="pre">consultar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">tree</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modelo.html#crud.consultar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modelo.crud.consultar" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.crud.dar_alta">
+<span class="sig-name descname"><span class="pre">dar_alta</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/modelo.html#crud.dar_alta"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modelo.crud.dar_alta" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="modelo.crud.modificar">
+<span class="sig-name descname"><span class="pre">modificar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/modelo.html#crud.modificar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modelo.crud.modificar" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modelo.decorador_alta">
+<span class="sig-prename descclassname"><span class="pre">modelo.</span></span><span class="sig-name descname"><span class="pre">decorador_alta</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">funcion</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modelo.html#decorador_alta"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modelo.decorador_alta" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modelo.decorador_borrar">
+<span class="sig-prename descclassname"><span class="pre">modelo.</span></span><span class="sig-name descname"><span class="pre">decorador_borrar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">funcion</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modelo.html#decorador_borrar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modelo.decorador_borrar" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="modelo.decorador_modificar">
+<span class="sig-prename descclassname"><span class="pre">modelo.</span></span><span class="sig-name descname"><span class="pre">decorador_modificar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">funcion</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/modelo.html#decorador_modificar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#modelo.decorador_modificar" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to RDV-APP’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="vista.html" class="btn btn-neutral float-right" title="VISTA" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2023, Veronica Bodeman.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
