@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="es" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VISTA &mdash; documentación de RDV-APP - 0.1</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+        <script src="_static/translations.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Búsqueda" href="search.html" />
+    <link rel="next" title="MODELO" href="modelo.html" />
+    <link rel="prev" title="Bienvenidos a la documentiacón de RDV-APP para Registro de Ventas de textiles!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            RDV-APP
+          </a>
+              <div class="version">
+                0.1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Buscar documentos" aria-label="Buscar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">VISTA</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#vista.vistaDeApp"><code class="docutils literal notranslate"><span class="pre">vistaDeApp</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#vista.vistaDeApp.actualizar"><code class="docutils literal notranslate"><span class="pre">vistaDeApp.actualizar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vista.vistaDeApp.borrar"><code class="docutils literal notranslate"><span class="pre">vistaDeApp.borrar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vista.vistaDeApp.dar_alta"><code class="docutils literal notranslate"><span class="pre">vistaDeApp.dar_alta()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vista.vistaDeApp.modificar"><code class="docutils literal notranslate"><span class="pre">vistaDeApp.modificar()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="modelo.html">MODELO</a></li>
+<li class="toctree-l1"><a class="reference internal" href="controlador.html">CONTROLADOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="observador.html">OBSERVADOR</a></li>
+<li class="toctree-l1"><a class="reference internal" href="validacion_re.html">VALIDACIÓN</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">RDV-APP</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">VISTA</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/vista.rst.txt" rel="nofollow"> Ver código fuente de la página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="vista">
+<h1>VISTA<a class="headerlink" href="#vista" title="Enlace permanente a este encabezado"></a></h1>
+<p>FUNCIONAMIENTO:</p>
+<p><a href="#id1"><span class="problematic" id="id2">*</span></a>A través del botón “Agregar”, se hace el nuevo ingreso del producto, la cantidad y el precio. El cual será visualizado por una tabla directamente desde la aplicación.</p>
+<p><a href="#id3"><span class="problematic" id="id4">*</span></a>A través del botón “Consultar”, se podrá visualizar los productos desde la tabla Productos.</p>
+<p><a href="#id5"><span class="problematic" id="id6">*</span></a>A través del botón “Eliminar”, se procede a la eliminación de ese producto con la cantidad y precio.</p>
+<p><a href="#id7"><span class="problematic" id="id8">*</span></a>A través del botón “Modificar”, se procede a la modificación de ese producto seleccionado.</p>
+<span class="target" id="module-vista"></span><dl class="py class">
+<dt class="sig sig-object py" id="vista.vistaDeApp">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">vista.</span></span><span class="sig-name descname"><span class="pre">vistaDeApp</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">window</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#vistaDeApp"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#vista.vistaDeApp" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="vista.vistaDeApp.actualizar">
+<span class="sig-name descname"><span class="pre">actualizar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#vistaDeApp.actualizar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#vista.vistaDeApp.actualizar" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vista.vistaDeApp.borrar">
+<span class="sig-name descname"><span class="pre">borrar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#vistaDeApp.borrar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#vista.vistaDeApp.borrar" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vista.vistaDeApp.dar_alta">
+<span class="sig-name descname"><span class="pre">dar_alta</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#vistaDeApp.dar_alta"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#vista.vistaDeApp.dar_alta" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="vista.vistaDeApp.modificar">
+<span class="sig-name descname"><span class="pre">modificar</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/vista.html#vistaDeApp.modificar"><span class="viewcode-link"><span class="pre">[fuente]</span></span></a><a class="headerlink" href="#vista.vistaDeApp.modificar" title="Enlazar permanentemente con esta definición"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Pie de página">
+        <a href="index.html" class="btn btn-neutral float-left" title="Bienvenidos a la documentiacón de RDV-APP para Registro de Ventas de textiles!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="modelo.html" class="btn btn-neutral float-right" title="MODELO" accesskey="n" rel="next">Siguiente <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Derechos de autor 2023, Veronica Bodeman.</p>
+  </div>
+
+  Compilado con <a href="https://www.sphinx-doc.org/">Sphinx</a> usando un
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    proporcionado por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
